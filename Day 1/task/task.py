@@ -1,2 +1,2 @@
-# Write your code below prthis line 👇
-print
+# Write your code below this line 👇
+print("Hello world!")
