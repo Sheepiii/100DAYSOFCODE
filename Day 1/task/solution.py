@@ -1,11 +1,2 @@
-name = "Jack"
-print(name)
-
-name = "Angela"
-print(name)
-
-# print(len(input("What is your name?")))
-
-username = input("What is your name?")
-length = len(username)
-print(length)
+# This line of code will take an input using the input() function
+print("Hello " + input("What is your name?") + "!")
