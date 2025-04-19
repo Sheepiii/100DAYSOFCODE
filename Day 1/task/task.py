@@ -18,3 +18,4 @@ username =input("What is your name?")
 length = len(username)
 
 print(length)
+# see how the variables flow into each other
