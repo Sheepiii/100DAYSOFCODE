@@ -22,3 +22,6 @@ ____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
 ''')
 print("Welcome to Treasure Island.")
 print("Your mission is to find the treasure.")
+print("You're at a cross road. Where do you want to go?")
+direction = input("\tType: 'Left' or 'Right'").lower()
+print(direction)
