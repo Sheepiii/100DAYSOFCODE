@@ -24,7 +24,7 @@ print("Welcome to Treasure Island.")
 print("Your mission is to find the treasure.")
 print("You're at a cross road. Where do you want to go?")
 direction = input("\tType: 'Left' or 'Right'\n").lower()
-
+wait = ""
 if direction == "left":
     print("You've come to a lake. There is an island in the middle of the lake.")
     wait = input("\tType 'wait' to wait for a boat. Type 'Swim' to swim across\n").lower()
