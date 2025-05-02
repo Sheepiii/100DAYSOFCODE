@@ -23,5 +23,37 @@ ____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
 print("Welcome to Treasure Island.")
 print("Your mission is to find the treasure.")
 print("You're at a cross road. Where do you want to go?")
-direction = input("\tType: 'Left' or 'Right'").lower()
-print(direction)
+direction = input("\tType: 'Left' or 'Right'\n").lower()
+
+if direction == "left":
+    print("You've come to a lake. There is an island in the middle of the lake.")
+    wait = input("\tType 'wait' to wait for a boat. Type 'Swim' to swim across\n").lower()
+elif direction == "right":
+    print("You fell into a hole. GAME OVER!")
+else:
+    print("wrong input -1 life")
+
+if wait == "swim":
+    print("\tAttacked by Angry trout\n Game Over!")
+elif wait == "wait":
+    print("You arrive at the island unharmed. There is a house with 3 doors.")
+    door_color = input("\tOne red,one yellow and one blue. Which colour do you choose?\n").lower()
+    if door_color == "red":
+        print("Burned by the Fire Lord!\n \tGAME OVER!")
+    elif door_color == "blue":
+        print("Eaten by the Hydra!\n \tGAME OVER!")
+    elif door_color == "yellow":
+        print("\tYOU WIN!")
+    else:
+        print("Choose a color!\n Also..YOU DIED!")
+else:
+    print("YOU DIED!")
+
+#if door_color == "red":
+    print("Burned by the Fire Lord!\n \tGAME OVER!")
+#elif door_color == "blue":
+    print("Eaten by the Hydra!\n \tGAME OVER!")
+#elif door_color == "blue":
+    print("\tYOU WIN!")
+#else:
+    print("Choose a color!\n Also..YOU DIED!")
