@@ -49,3 +49,4 @@ elif wait == "wait":
 else:
     print("YOU DIED!")
 
+#treasure island complete
