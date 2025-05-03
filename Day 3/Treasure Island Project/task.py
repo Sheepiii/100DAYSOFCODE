@@ -34,7 +34,7 @@ else:
     print("wrong input -1 life")
 
 if wait == "swim":
-    print("\tAttacked by Angry trout\n Game Over!")
+    print("\tAttacked by Angry trout\n \t    Game Over!")
 elif wait == "wait":
     print("You arrive at the island unharmed. There is a house with 3 doors.")
     door_color = input("\tOne red,one yellow and one blue. Which colour do you choose?\n").lower()
@@ -49,11 +49,3 @@ elif wait == "wait":
 else:
     print("YOU DIED!")
 
-#if door_color == "red":
-    print("Burned by the Fire Lord!\n \tGAME OVER!")
-#elif door_color == "blue":
-    print("Eaten by the Hydra!\n \tGAME OVER!")
-#elif door_color == "blue":
-    print("\tYOU WIN!")
-#else:
-    print("Choose a color!\n Also..YOU DIED!")

@@ -48,3 +48,33 @@ if choice1 == "left":
 
 else:
     print("You fell in to a hole. Game Over.")
+
+#this is here code which is cleaner
+#keeps the if statements encapsulated and much easier to follow
+
+choice1 = input('You\'re at a crossroad, where do you want to go? '
+                'Type "left" or "right".\n').lower() #.lower() makes it so the input no matter what is all lowercase
+
+if choice1 == "left":
+    choice2 = input('You\'ve come to a lake. ' #uses \in a string output to ignore the '
+                    'There is an island in the middle of the lake. '
+                    'Type "wait" to wait for a boat. '
+                    'Type "swim" to swim across.\n').lower()# doing single quotes at the end allows us to include " "
+    if choice2 == "wait":
+        choice3 = input("You arrive at the island unharmed. "
+                        "There is house with 3 doors. One red, "
+                        "one yellow and one blue. "
+                        "Which colour do you choose?\n").lower()
+        if choice3 == "red":
+            print("It's a room full of fire. Game Over")
+        elif choice3 == "yellow":
+            print("You found the treasure. You Win!")
+        elif choice3 == "blue":
+            print("You enter a room of beasts. Game Over.")
+        else:
+            print("You chose a door that doesn't exist. Game Over.")
+    else:
+        print("You got attacked by an angry trout. Game Over.")
+
+else:
+    print("You fell in to a hole. Game Over.")
