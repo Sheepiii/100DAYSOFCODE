@@ -1,3 +1,15 @@
+import random
+print("Welcome to Rock, Paper, Scissors!")
+print("What do you choose? Type 0 for Rock, 1 for Paper or 2 for Scissors.")
+
+choices = ["Rock","Paper","Scissors"]
+computer_choice = random.choice(choices)
+
+if
+print(f"You Choose {choices}")
+print(f"Computer Choose: {computer_choice}")
+
+
 rock = '''
     _______
 ---'   ____)
