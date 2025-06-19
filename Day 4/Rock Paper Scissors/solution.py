@@ -27,14 +27,14 @@ scissors = '''
 ---.__(___)
 '''
 
-game_images = [rock, paper, scissors]
+game_images = [rock, paper, scissors]#list goes 0,1,2 like the choices for the game
 
-user_choice = int(input("What do you choose? Type 0 for Rock, 1 for Paper or 2 for Scissors.\n"))
+user_choice = int(input("What do you choose? Type 0 for Rock, 1 for Paper or 2 for Scissors.\n")) #need to make it a int( because if not its a string
 # Note: it's worth checking if the user has made a valid choice before the next line of code.
 # If the user typed somthing other than 0, 1 or 2 the next line will give you an error.
 # You could for example write:
-if user_choice >= 0 and user_choice <= 2:
-    print(game_images[user_choice])
+if user_choice >= 0 and user_choice <= 2: #only print images if response is between 0 and 2
+    print(game_images[user_choice])#print game image based of users choice
 
 computer_choice = random.randint(0, 2)
 print("Computer chose:")

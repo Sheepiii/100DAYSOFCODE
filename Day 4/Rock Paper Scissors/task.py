@@ -27,9 +27,9 @@ scissors = '''
 ---.__(___)
 '''
 
-game_images = [rock, paper, scissors]
+game_images = [rock, paper, scissors]#list goes 0,1,2 like the choices for the game
 
-user_choice = int(input("What do you choose? Type 0 for Rock, 1 for Paper or 2 for Scissors.\n"))
+user_choice = int(input("What do you choose? Type 0 for Rock, 1 for Paper or 2 for Scissors.\n"))#make this a int( to make it a int vs a string response
 # Note: it's worth checking if the user has made a valid choice before the next line of code.
 # If the user typed somthing other than 0, 1 or 2 the next line will give you an error.
 # You could for example write:
